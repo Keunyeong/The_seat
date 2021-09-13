@@ -252,7 +252,7 @@
 						return response.json();
 					})
 					.then(function(data){
-						swal("주문 완료!", "메인 페이지로 이동합니다.", "success")
+						swal("주문 완료!", "마이페이지에서 주문상태를 확인해주세요.!", "success")
 						.then(function(){
 							location.href="${pageContext.request.contextPath}/main.do?area=&keyword=";
 						})

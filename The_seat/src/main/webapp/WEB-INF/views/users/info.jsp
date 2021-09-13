@@ -318,8 +318,8 @@ type="text/css" />
             </div>
             <div class="modal-body" style=" display:flex; flex-direction:column; align-items: center; justify-content: center;">
             	<a id="reviewImgLink" href="javascript:">
-	                <img src="#" alt="" id="reviewImg" name="review" class="image mt-3"
-	                style="width: 150px; height: 150px; "/>
+	           		<img src="${pageContext.request.contextPath}/resources/img/clickme1.png" alt="" id="reviewImg" name="review" class="image mt-3"
+                		style="width: 150px; height: 150px; "/>
 	            </a>
                 <form data-num2="" id="reviewAddForm" action="${pageContext.request.contextPath}/store/addReview.do" method="post" enctype="multipart/form-data">                 
                     <select id="insertStarSelect" name="star">

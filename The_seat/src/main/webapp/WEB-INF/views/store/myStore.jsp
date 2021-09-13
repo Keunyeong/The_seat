@@ -24,8 +24,15 @@
          <div class="store-top__info">
              <div>
                  <a class="updateImgLink" href="javascript:">
-                     <img src="${pageContext.request.contextPath}${dto.image_logo}" alt="" id="image_logo" name="logo" class="image mt-3"
-                     style="width: 150px; height: 150px; "/>
+	                 <c:choose>
+	             		<c:when test="${empty dto.image_logo}">
+	             			<img src="${pageContext.request.contextPath}/resources/img/clickme1.png" alt="" />
+	             		</c:when>
+	             		<c:otherwise>
+	             			<img src="${pageContext.request.contextPath}${dto.image_logo}" alt="" id="image_logo" name="logo" class="image mt-3"
+                     			style="width: 150px; height: 150px; "/>
+	             		</c:otherwise>
+	             	 </c:choose>
                  </a>
                  <form action="${pageContext.request.contextPath}/uploadImage.do" id="logoForm" method="post" 
                  style="text-align: center;" enctype="multipart/form-data">
@@ -82,8 +89,15 @@
          <div class="store-bottom__info">
              <div style="text-align: center; width:100%;">
                  <a class="updateImgLink" href="javascript:">
-                     <img src="${pageContext.request.contextPath}${dto.image_1}" alt="" id="image_1" name="image1" class="image" 
-                     style="width: 80%; height: 150px;"/>
+	                 <c:choose>
+	             		<c:when test="${empty dto.image_1}">
+	             			<img src="${pageContext.request.contextPath}/resources/img/clickme1.png" alt="" />
+	             		</c:when>
+	             		<c:otherwise>
+	             			<img src="${pageContext.request.contextPath}${dto.image_1}" alt="" id="image_1" name="image1" class="image" 
+	                     		style="width: 80%; height: 150px;"/>
+	             		</c:otherwise>
+	             	</c:choose>
                  </a>
                  <form action="${pageContext.request.contextPath}/uploadImage.do" id="imageForm1" method="post" enctype="multipart/form-data"
                  		style="height:85px;">
@@ -98,17 +112,38 @@
              <div>
                  <!-- 매장 대표 이미지 관리 영역2-->
                  <a class="updateImgLink" href="javascript:">
-                     <img src="${pageContext.request.contextPath}${dto.image_2}" alt="" id="image_2" name="image2" class="image"/>
+	                 <c:choose>
+	             		<c:when test="${empty dto.image_2}">
+	             			<img src="${pageContext.request.contextPath}/resources/img/clickme1.png" alt="" />
+	             		</c:when>
+	             		<c:otherwise>
+	             			<img src="${pageContext.request.contextPath}${dto.image_2}" alt="" id="image_2" name="image2" class="image"/>
+	             		</c:otherwise>
+	             	</c:choose>
                  </a>
                  
                  <!-- 매장 대표 이미지 관리 영역3-->
                  <a class="updateImgLink" href="javascript:">
-                     <img src="${pageContext.request.contextPath}${dto.image_3}" alt="" id="image_3" name="image3" class="image"/>
+	                 <c:choose>
+	             		<c:when test="${empty dto.image_3}">
+	             			<img src="${pageContext.request.contextPath}/resources/img/clickme1.png" alt="" />
+	             		</c:when>
+	             		<c:otherwise>
+	             			<img src="${pageContext.request.contextPath}${dto.image_3}" alt="" id="image_3" name="image3" class="image"/>
+	             		</c:otherwise>
+	             	</c:choose>
                  </a>
                  
                  <!-- 매장 대표 이미지 관리 영역4-->
                  <a class="updateImgLink" href="javascript:">
-                     <img src="${pageContext.request.contextPath}${dto.image_4}" alt="" id="image_4" name="image4" class="image"/>
+	                 <c:choose>
+	             		<c:when test="${empty dto.image_4}">
+	             			<img src="${pageContext.request.contextPath}/resources/img/clickme1.png" alt="" />
+	             		</c:when>
+	             		<c:otherwise>
+	             			<img src="${pageContext.request.contextPath}${dto.image_4}" alt="" id="image_4" name="image4" class="image"/>
+	             		</c:otherwise>
+	             	 </c:choose>
                  </a>
      
      			<div class="form-wrapper" style="display:flex;">
