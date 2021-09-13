@@ -75,7 +75,7 @@ public class StoreController {
 	
 	// 매장 관리 링크를 눌러서 요청되는 경로에 대한 method
 	@RequestMapping(value="/store/myStore.do", method=RequestMethod.GET)
-	public String authMyStore(@RequestParam int num, HttpServletRequest request) {
+	public String myStore(@RequestParam int num, HttpServletRequest request) {
 		
 		// service에서 매장 정보를 DB에서 꺼내와서 request에 넣고
 		service.getMyStore(request);
@@ -199,7 +199,7 @@ public class StoreController {
 	
 	// 매장 리뷰 관리 페이지로 이동
 	@RequestMapping("/store/storeReview.do")
-	public String authStoreReview(StoreDto dto, HttpServletRequest request){
+	public String storeReview(StoreDto dto, HttpServletRequest request){
 		String num = request.getParameter("num");
 		request.setAttribute("num", num);
 		ReviewDto rDto=new ReviewDto();
@@ -214,7 +214,7 @@ public class StoreController {
 	
 	// 매장 주문관리 페이지로 이동
 	@RequestMapping("/store/storeOrder")
-	public ModelAndView authStoreOrder(ModelAndView mView,HttpServletRequest request, 
+	public ModelAndView storeOrder(ModelAndView mView,HttpServletRequest request, 
 			HttpSession session){
 		String num = request.getParameter("num");
 		request.setAttribute("num", num);

@@ -45,10 +45,10 @@ type="text/css" />
 				<h3 style="margin-bottom:20px;">${dto.name}님의 마이페이지
 					<c:choose>
 						<c:when test="${myStoreList.size() eq 0 }"> 
-							<span>(🍽Guest)</span>
+							<span>(🍽손님)</span>
 						</c:when>
 						<c:otherwise>
-							<span>(💎Owner)</span>
+							<span>(💎사장님)</span>
 						</c:otherwise>
 					</c:choose>
 				</h3>

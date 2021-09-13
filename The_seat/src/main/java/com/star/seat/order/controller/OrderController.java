@@ -37,7 +37,7 @@ public class OrderController {
 	// 주문하기
 	@RequestMapping(value = "/order/insert.do", method = RequestMethod.POST)
 	@ResponseBody
-	public Map<String, Object> authGetList(OrderDto dto){
+	public Map<String, Object> getList(OrderDto dto){
 		service.orderInsert(dto);
 		Map<String, Object> map=new HashMap<String, Object>();
 		map.put("isSuccess",true);
