@@ -37,7 +37,7 @@ public class OrderController {
 	// 주문하기
 	@RequestMapping(value = "/order/insert.do", method = RequestMethod.POST)
 	@ResponseBody
-	public Map<String, Object> getList(OrderDto dto){
+	public Map<String, Object> authGetList(OrderDto dto){
 		service.orderInsert(dto);
 		Map<String, Object> map=new HashMap<String, Object>();
 		map.put("isSuccess",true);
@@ -46,7 +46,7 @@ public class OrderController {
 	
 	// 좌석 선택 후 매장 주문 페이지로 이동
 	@RequestMapping(value = "/order/order.do", method = RequestMethod.GET)
-	public ModelAndView Order(ModelAndView mView, SeatDto sDto, StoreDto dto, HttpServletRequest request){
+	public ModelAndView authOrder(ModelAndView mView, SeatDto sDto, StoreDto dto, HttpServletRequest request){
 		sService.getMyStore_num(dto, request);
 		mService.getMenuList_user(dto, request);
 		int tableNum = Integer.parseInt(request.getParameter("tableNum"));
