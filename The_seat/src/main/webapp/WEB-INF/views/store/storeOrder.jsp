@@ -215,29 +215,16 @@
 	}
 	
 	
-	
-	function countDown2(){
+	function countDown(){
 		let count = Number(document.querySelector("#refresh").innerText);
-		count = count-1;
+		count -= 1;
 		document.querySelector("#refresh").innerText= count;
+		console.log('countDown');
 		setTimeout(countDown, 1000);
 	}
 	
-	function countDown1(){
-		let count = Number(document.querySelector("#refresh").innerText);
-		count = count-1;
-		document.querySelector("#refresh").innerText= count;
-		setTimeout(countDown2, 1000);
-	}
-	
-	function countDown(){
-		let count = Number(document.querySelector("#refresh").innerText);
-		count = count-1;
-		document.querySelector("#refresh").innerText= count;
-		setTimeout(countDown1, 1000);
-	}
 	function refresh(){
-		location.reload(true);
+		location.reload();
 	}
 	let countNum = setTimeout(countDown, 1000);
 	let timer = setTimeout(refresh, 10000);
