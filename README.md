@@ -9,6 +9,7 @@ acornacademy/FinalProject
 [1. 📚  팀 노션](https://www.notion.so/2-2-d57f5833370740869bd2f24943881d4f)
 
 [2. 📹  페이지 시연영상](https://www.youtube.com/watch?v=WDNLef7isgw)
+<br>
 Click video!
 [![](https://img.youtube.com/vi/WDNLef7isgw/0.jpg)](http://www.youtube.com/watch?v=WDNLef7isgw "Click to play on Youtube.com")
 
