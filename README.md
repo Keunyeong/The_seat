@@ -11,8 +11,9 @@ acornacademy/FinalProject
 [2. 📹  페이지 시연영상](https://www.youtube.com/watch?v=WDNLef7isgw)
 <br>
 Click video!
+<br>
 [![](https://img.youtube.com/vi/WDNLef7isgw/0.jpg)](http://www.youtube.com/watch?v=WDNLef7isgw "Click to play on Youtube.com")
-
+<br>
 
 
 ## 목차
